@@ -111,6 +111,7 @@ sudo systemctl reload caddy
 # Build image
 docker build -f apps/gateway/Dockerfile -t gopay-merchant-gateway:latest .
 
+
 # Run container with mounted session & persistent DB
 docker run -d \
   --name gopay-gateway \
